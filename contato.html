@@ -28,14 +28,17 @@
             <section>
                 <form class="form">
                     <label for="txt_nome">Nome:</label><br>
-                    <input type="text" id="txt_nome"><br><br>
+                    <input type="text" id="txt_nome" onkeyup="validaNome()">
+                    <div id="inputNome"></div><br>
     
                     <label for="txt_email">Email:</label><br>
-                    <input type="text" id="txt_email"><br><br>
-    
+                    <input type="text" id="txt_email" onkeyup="validaEmail()">
+                    <div id="inputEmail"></div><br>
+
                     <label for="txt_assunto">Assunto:</label><br>
-                    <textarea name="assunto" id="txt_assunto" cols="60" rows="5"></textarea><br><br>
-                    <button class="btn-enviar">Enviar</button>
+                    <textarea name="assunto" id="txt_assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea><br>
+                    <div id="inputAssunto">0 / 100</div><br>
+                    <button class="btn-enviar" onclick="enviar()">Enviar</button>
                 </form>
             </section>
     
@@ -51,6 +54,8 @@
             </section>
         </div>
     </main>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 

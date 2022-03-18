@@ -118,3 +118,11 @@ label {
 .btn-enviar:hover {
     background-color: rgb(38, 44, 100);
 }
+
+/* ! DIV INPUT */
+
+#inputNome, #inputEmail, #inputAssunto {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: .8rem;
+}
